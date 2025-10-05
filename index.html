@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITF Simple Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <p>68070084</p>
+        <h1>ITF Web</h1>
+        <p>Week 14</p>
+    </nav>
+
+    <!-- Header / Title -->
+    <div class="container">
+        <img src="Adore.png" width="96" alt="Cool">
+        <h2 id="my-title">ITF Simple Bank</h2>
+        <p>Welcome to my first HTML + CSS + JS website!</p>
+        <hr>
+    </div>
+
+    <!-- Output Textarea -->
+    <textarea id="output" class="output" readonly></textarea>
+
+    <!-- Main Content: Left & Right Panels -->
+    <div class="content">
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <!-- Account Overview -->
+            <div class="overview">
+                <h3>Account Overview</h3>
+            </div>
+
+            <!-- Account Info -->
+            <div class="Account">
+                <img src="user.png" alt="user">
+                <div class="account-info">
+                    <h3>Account Information</h3>
+                    <p>Name: Skibidi</p>
+                    <p>Type: Savings Account</p>
+                </div>
+            </div>
+
+            <!-- Balance Info -->
+            <div class="Balance">
+                <img src="briefcase.png" alt="balance">
+                <div class="balance-info">
+                    <h3>Balance Information</h3>
+                    <p>Current Account Balance: <input type="number" id="account_balance" value="0"></p>
+                    <p>Current Cash Balance: <input type="number" id="cash_balance" value="0"></p>
+                    <p><button id="confirm-btn">Confirm</button></p>
+                </div>
+            </div>
+
+            <!-- Bank Op -->
+             <div class="operation">
+                <img src="calculator.png" alt="calculator">
+                <div class="bank-op">
+                    <h3>Bank Operation</h3>
+
+                    <!-- Operation Selector -->
+                    <div class="operation-selector">
+                        <button id="operation-btn">Select Operation ▼</button>
+                        <div id="operation-menu" class="operation-menu">
+                            <div class="operation-option" data-op="deposit">Deposit</div>
+                            <div class="operation-option" data-op="withdraw">Withdraw</div>
+                        </div>
+                    </div>
+
+                    <!-- Amount Input -->
+                    <div class="operation-input">
+                        <input type="number" id="operation-amount" value="0" min="0" placeholder="Enter amount">
+                    </div>
+
+                    <!-- Proceed Button -->
+                    <div>
+                        <button id="proceed-btn">Proceed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <!-- Financial Tools -->
+            <div class="fitools">
+                <h3>Financial Tools</h3>
+            </div>
+
+            <!-- Currency Converter -->
+            <div class="currency">
+                <img src="banknote.png" alt="balance">
+                <div class="cur-con">
+                    <h3>Currency Converter (coming Soon)</h3>
+                    <p>Input balance: <input type="number" id="account_balance_right" value="0" readonly></p>
+                    <p>Output balance: <input type="number" id="cash_balance_right" value="0" readonly></p>
+
+                    <!-- Currency Selector -->
+                    <div class="currency-selector">
+                        <button id="currency-btn">Select Currency ▼</button>
+                        <div id="currency-menu" class="currency-menu">
+                            <div class="currency-option" data-currency="USD">USD</div>
+                            <div class="currency-option" data-currency="THB">THB</div>
+                        </div>
+                    </div>
+
+                    <p><button>Convert</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
